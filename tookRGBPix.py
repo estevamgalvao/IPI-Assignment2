@@ -39,4 +39,4 @@ def tookRBGPix(img, i, j, option):
         red.append(img[i + 1, j - 1, 2])
         return red
     else:
-        print("não fode")
+        print("não fode, né, Moai")
