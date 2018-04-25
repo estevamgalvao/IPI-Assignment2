@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0879e619-534a-45ca-a6eb-57860edab8d7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6f5ec93b-fcb7-42bc-a11b-412b4ab0a171.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Questão1.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Questão1.1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rgb2YCbCr.py" beforeDir="false" afterPath="$PROJECT_DIR$/rgb2YCbCr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tookRGBPix.py" beforeDir="false" afterPath="$PROJECT_DIR$/tookRGBPix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brrrr.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgAux.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgDenoised.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgDenoised2.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgEdge.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgYCC.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/marcao.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/marcao.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marcaoComBorda.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/marcaoMedianaSemBorda.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/marcaoMedianaSemBorda.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marcaoRGBMedian.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miranha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miranhagray.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miranhagray.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rgb2YCbCr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,9 +29,11 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/IPI_Assingment2$test.coverage" NAME="test Coverage Results" MODIFIED="1524599856072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/IPI_Assingment2$Questão1_1.coverage" NAME="Questão1.1 Coverage Results" MODIFIED="1524679390595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/IPI_Assingment2$Questão1_1.coverage" NAME="Questão1.1 Coverage Results" MODIFIED="1524687538447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IPI_Assingment2$lul.coverage" NAME="lul Coverage Results" MODIFIED="1523900778052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IPI_Assingment2$Questão1.coverage" NAME="Questão1 Coverage Results" MODIFIED="1524592321998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/IPI_Assingment2$testao2.coverage" NAME="testao2 Coverage Results" MODIFIED="1524686857549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/IPI_Assingment2$testao.coverage" NAME="testao Coverage Results" MODIFIED="1524687503539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -34,11 +49,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Questão1.1.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Questão1.1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Questão1.1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="594">
+              <caret line="51" column="29" lean-forward="true" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testao.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testao.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testao2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testao2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -55,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rgb2YCbCr.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rgb2YCbCr.py">
+      <file leaf-file-name="rgb_ycbcr.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rgb_ycbcr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-42">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="255">
+              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -79,7 +118,7 @@
       <file leaf-file-name="tookRGBPix.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tookRGBPix.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
+            <state relative-caret-position="-64">
               <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
             </state>
           </provider>
@@ -100,6 +139,8 @@
       <find>0</find>
       <find>imageAux</find>
       <find>imageDenoised</find>
+      <find>128</find>
+      <find>32768</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -110,6 +151,8 @@
       <replace>imageAux</replace>
       <replace>imageDenoised</replace>
       <replace>denoisedImage</replace>
+      <replace>32768</replace>
+      <replace>128</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -122,8 +165,11 @@
         <option value="$PROJECT_DIR$/Questão1.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/tookRGBPix.py" />
-        <option value="$PROJECT_DIR$/Questão1.1.py" />
         <option value="$PROJECT_DIR$/rgb2YCbCr.py" />
+        <option value="$PROJECT_DIR$/testao2.py" />
+        <option value="$PROJECT_DIR$/rgb_ycbcr.py" />
+        <option value="$PROJECT_DIR$/testao.py" />
+        <option value="$PROJECT_DIR$/Questão1.1.py" />
       </list>
     </option>
   </component>
@@ -136,7 +182,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
     <option name="y" value="25" />
     <option name="width" value="927" />
@@ -225,25 +271,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="lul" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="IPI-Assingment2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lul.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="IPI-Assingment2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -263,18 +290,58 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="testao" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="IPI-Assingment2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testao.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="testao2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="IPI-Assingment2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testao2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
-      <item itemvalue="Python.lul" />
       <item itemvalue="Python.Questão1" />
       <item itemvalue="Python.Questão1.1" />
       <item itemvalue="Python.test" />
+      <item itemvalue="Python.testao" />
+      <item itemvalue="Python.testao2" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Questão1.1" />
+        <item itemvalue="Python.testao" />
+        <item itemvalue="Python.testao2" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.Questão1" />
-        <item itemvalue="Python.lul" />
       </list>
     </recent_temporary>
   </component>
@@ -292,7 +359,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="927" height="1055" extended-state="4" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -302,7 +369,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34285715" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24595469" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.123043716" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -347,7 +414,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rgb2YCbCr.py">
+    <entry file="file://$PROJECT_DIR$/rgb_ycbcr.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
@@ -450,39 +517,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lul.py" />
     <entry file="file://$PROJECT_DIR$/lul.py" />
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Questão1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="28" selection-start-line="27" selection-end-line="28" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tookRGBPix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Questão1.1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -494,10 +534,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rgb2YCbCr.py">
+    <entry file="file://$PROJECT_DIR$/tookRGBPix.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="-64">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rgb_ycbcr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testao2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Questão1.1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="51" column="29" lean-forward="true" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

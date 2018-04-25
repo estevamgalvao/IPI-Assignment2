@@ -9,25 +9,31 @@ def RGB_YCbCr(img, option):
         imageCr = np.zeros((width, height, 1), dtype=np.uint8)
 
         imageY = (0.114 * img[:, :, 0] + 0.587 * img[:, :, 1] + 0.299 * img[:, :, 2])
-        imageCb = 0.564 * (img[:, :, 0] - imageY)
-        imageCr = 0.713 * (img[:, :, 2] - imageY)
+        imageCr = (0.713 * (img[:, :, 2] - imageY)) + 128
+        imageCb = (0.564 * (img[:, :, 0] - imageY)) + 128
 
         img[:, :, 0] = imageY
-        img[:, :, 1] = imageCb
-        img[:, :, 2] = imageCr
+        img[:, :, 1] = imageCr
+        img[:, :, 2] = imageCb
 
     elif (option == 2):
+        #img = img.astype(np.int64)
+
         imageR = np.zeros((width, height, 1), dtype=np.uint8)
         imageG = np.zeros((width, height, 1), dtype=np.uint8)
         imageB = np.zeros((width, height, 1), dtype=np.uint8)
 
-        imageR = img[:, :, 0] + (1.402 * img[:, :, 2])
-        imageG = img[:, :, 0] - (0.344 * img[:, :, 1]) - (0.714 * img[:, :, 2])
-        imageB = img[:, :, 0] + (1.772 * img[:, :, 1])
+        imageR = img[:, :, 0] + (1.402 * (img[:, :, 1] - 128))
+        imageG = img[:, :, 0] + (-0.714 * (img[:, :, 1] - 128)) + (-0.344 * (img[:, :, 2] - 128))
+        imageB = img[:, :, 0] + (1.772 * (img[:, :, 2] - 128))
 
         img[:, :, 0] = imageB
         img[:, :, 1] = imageG
         img[:, :, 2] = imageR
-
+        #img = img.astype(np.uint64)
     else:
         print("não fode, moai")
+
+
+#RGB - GRB - RBG - BRG - BGR - GBR
+#RGB - BGR - GRB - RBG - BRG - GBR - FEITOS

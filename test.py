@@ -1,4 +1,4 @@
-from rgb2YCbCr import rgb2YCbCr
+from rgb_ycbcr import rgb2YCbCr
 import cv2
 
 
