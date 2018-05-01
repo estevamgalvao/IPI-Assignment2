@@ -4,13 +4,13 @@ def RGB_YCbCr(img, option):
     height, width, channels = img.shape
 
     if (option == 1):
-        imageY = np.zeros((width, height, 1), dtype=np.uint8)
-        imageCb = np.zeros((width, height, 1), dtype=np.uint8)
-        imageCr = np.zeros((width, height, 1), dtype=np.uint8)
+        imageY = np.zeros((width, height, 1), dtype=np.int8)
+        imageCb = np.zeros((width, height, 1), dtype=np.int8)
+        imageCr = np.zeros((width, height, 1), dtype=np.int8)
 
         imageY = (0.114 * img[:, :, 0] + 0.587 * img[:, :, 1] + 0.299 * img[:, :, 2])
-        imageCr = (0.713 * (img[:, :, 2] - imageY)) + 128
-        imageCb = (0.564 * (img[:, :, 0] - imageY)) + 128
+        imageCr = (0.713 * img[:, :, 2] - 0.713 * imageY + 128)
+        imageCb = (0.564 * img[:, :, 0] - 0.564 * imageY + 128)
 
         img[:, :, 0] = imageY
         img[:, :, 1] = imageCr
@@ -19,13 +19,13 @@ def RGB_YCbCr(img, option):
     elif (option == 2):
         #img = img.astype(np.int64)
 
-        imageR = np.zeros((width, height, 1), dtype=np.uint8)
-        imageG = np.zeros((width, height, 1), dtype=np.uint8)
-        imageB = np.zeros((width, height, 1), dtype=np.uint8)
+        imageR = np.zeros((width, height, 1), dtype=np.int8)
+        imageG = np.zeros((width, height, 1), dtype=np.int8)
+        imageB = np.zeros((width, height, 1), dtype=np.int8)
 
-        imageR = img[:, :, 0] + (1.402 * (img[:, :, 1] - 128))
-        imageG = img[:, :, 0] + (-0.714 * (img[:, :, 1] - 128)) + (-0.344 * (img[:, :, 2] - 128))
-        imageB = img[:, :, 0] + (1.772 * (img[:, :, 2] - 128))
+        imageR = img[:, :, 0] + (1.402 * img[:, :, 1] - 1.402 * 128)
+        imageG = img[:, :, 0] + (-0.714 * img[:, :, 1] - (-0.714 * 128)) + (-0.344 * img[:, :, 2] - (-0.344 * 128))
+        imageB = img[:, :, 0] + (1.772 * img[:, :, 2] - 1.772 * 128)
 
         img[:, :, 0] = imageB
         img[:, :, 1] = imageG

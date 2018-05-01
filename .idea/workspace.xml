@@ -2,23 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0879e619-534a-45ca-a6eb-57860edab8d7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/6f5ec93b-fcb7-42bc-a11b-412b4ab0a171.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mars_RGB.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mars_RGBDOIS.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mars_YCbCr.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mars_YCbCrDOIS.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Median Image RGB.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/Median Image RGB.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Meu RGB-semint8.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Meu RGB.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/Meu RGB.bmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Questão1.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Questão1.1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brrrr.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgAux.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgDenoised.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgDenoised2.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgEdge.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgYCC.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/marcao.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/marcao.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marcaoComBorda.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/marcaoMedianaSemBorda.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/marcaoMedianaSemBorda.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marcaoRGBMedian.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/miranha.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/miranhagray.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/miranhagray.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rgb2YCbCr.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Teste.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/marcaoMedianaSemBorda.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rgb_ycbcr.py" beforeDir="false" afterPath="$PROJECT_DIR$/rgb_ycbcr.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,18 +24,18 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/IPI_Assingment2$test.coverage" NAME="test Coverage Results" MODIFIED="1524599856072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/IPI_Assingment2$Questão1_1.coverage" NAME="Questão1.1 Coverage Results" MODIFIED="1524687538447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/IPI_Assingment2$Questão1_1.coverage" NAME="Questão1.1 Coverage Results" MODIFIED="1525184900102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IPI_Assingment2$lul.coverage" NAME="lul Coverage Results" MODIFIED="1523900778052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IPI_Assingment2$Questão1.coverage" NAME="Questão1 Coverage Results" MODIFIED="1524592321998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/IPI_Assingment2$testao2.coverage" NAME="testao2 Coverage Results" MODIFIED="1524686857549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IPI_Assingment2$testao.coverage" NAME="testao Coverage Results" MODIFIED="1524687503539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/IPI_Assingment2$testao2.coverage" NAME="testao2 Coverage Results" MODIFIED="1525185020467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Questão1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Questão1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
+            <state relative-caret-position="414">
               <caret line="28" selection-start-line="27" selection-end-line="28" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -49,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Questão1.1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Questão1.1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Questão1.1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="51" column="29" lean-forward="true" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+            <state relative-caret-position="162">
+              <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -61,35 +56,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testao.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testao.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testao2.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="testao2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testao2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rgb2gray.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rgb2gray.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="44" selection-start-column="44" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -97,29 +71,8 @@
       <file leaf-file-name="rgb_ycbcr.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rgb_ycbcr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tookRGBPix.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tookRGBPix.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-64">
-              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+            <state relative-caret-position="270">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -141,6 +94,7 @@
       <find>imageDenoised</find>
       <find>128</find>
       <find>32768</find>
+      <find>denoisedImage</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -153,6 +107,7 @@
       <replace>denoisedImage</replace>
       <replace>32768</replace>
       <replace>128</replace>
+      <replace>averageImage</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -167,8 +122,8 @@
         <option value="$PROJECT_DIR$/tookRGBPix.py" />
         <option value="$PROJECT_DIR$/rgb2YCbCr.py" />
         <option value="$PROJECT_DIR$/testao2.py" />
-        <option value="$PROJECT_DIR$/rgb_ycbcr.py" />
         <option value="$PROJECT_DIR$/testao.py" />
+        <option value="$PROJECT_DIR$/rgb_ycbcr.py" />
         <option value="$PROJECT_DIR$/Questão1.1.py" />
       </list>
     </option>
@@ -194,6 +149,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -210,7 +166,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -232,7 +187,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Questão1.1">
+  <component name="RunManager" selected="Python.testao2">
     <configuration name="Questão1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="IPI-Assingment2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -337,9 +292,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.testao2" />
         <item itemvalue="Python.Questão1.1" />
         <item itemvalue="Python.testao" />
-        <item itemvalue="Python.testao2" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.Questão1" />
       </list>
@@ -399,6 +354,33 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Questão1.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" selection-start-line="27" selection-end-line="28" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rgb_ycbcr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Questão1.1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="50" lean-forward="true" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Questão1.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="28" selection-start-line="27" selection-end-line="28" />
           <folding>
@@ -425,9 +407,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -519,11 +498,18 @@
     <entry file="file://$PROJECT_DIR$/lul.py" />
     <entry file="file://$PROJECT_DIR$/Questão1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
+        <state relative-caret-position="414">
           <caret line="28" selection-start-line="27" selection-end-line="28" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -534,6 +520,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tookRGBPix.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-64">
@@ -541,47 +534,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/rgb_ycbcr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rgb_ycbcr.py">
+    <entry file="file://$PROJECT_DIR$/Questão1.1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        <state relative-caret-position="162">
+          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testao2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Questão1.1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="51" column="29" lean-forward="true" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

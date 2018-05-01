@@ -15,19 +15,19 @@ for img in imageArray:
 
 print("Image Array: ", imageArray[0].dtype)
 
-denoisedImage = np.zeros_like(imageArray[0], dtype = np.uint16)
-print("Denoised Image: ", denoisedImage.dtype)
+averageImage = np.zeros_like(imageArray[0], dtype = np.uint16)
+print("Average Image: ", averageImage.dtype)
 for img in imageArray:
-    denoisedImage += img
-denoisedImage = denoisedImage / numImg
-denoisedImage = denoisedImage.astype(np.int16)
+    averageImage += img
+averageImage = averageImage / numImg
+averageImage = averageImage.astype(np.int16)
 
-print("Denoised Image - Pós: ", denoisedImage.dtype)
-cv2.imwrite("marcao.bmp", denoisedImage)
+print("Average Image - Pós: ", averageImage.dtype)
+cv2.imwrite("marcao.bmp", averageImage)
 
-height, width, channels = denoisedImage.shape
+height, width, channels = averageImage.shape
 borderedImage = np.full((height+4,width+4,3), 255, dtype = np.uint8)
-borderedImage[2:height+2, 2:width+2] = denoisedImage[:, :]
+borderedImage[2:height+2, 2:width+2] = averageImage[:, :]
 
 print("Bordered Image: ", borderedImage.dtype)
 
@@ -42,12 +42,11 @@ medianImage = borderedImage[2:width, 2:height, :]
 print("Median Image: ", medianImage.dtype)
 
 #cv2.imwrite("marcaoMedianaSemBorda.bmp", medianImage)
-# RGB_YCbCr(borderedImage, 2)
-
 cv2.imwrite("Median Image.bmp", medianImage)
-medianImage = cv2.cvtColor(medianImage, cv2.COLOR_YCR_CB2BGR)
+RGB_YCbCr(medianImage, 2)
+# medianImage = cv2.cvtColor(medianImage, cv2.COLOR_YCR_CB2BGR)
 cv2.imwrite("Median Image RGB.bmp", medianImage)
 #imgRBG2 = cv2.cvtColor(teste, cv2.COLOR_YCR_CB2BGR)
 
-# print(denoisedImage[6,6,0])
+# print(averageImage[6,6,0])
 # print(borderedImage[8,8,0])
