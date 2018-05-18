@@ -33,7 +33,3 @@ def RGB_YCbCr(img, option):
         #img = img.astype(np.uint64)
     else:
         print("não fode, moai")
-
-
-#RGB - GRB - RBG - BRG - BGR - GBR
-#RGB - BGR - GRB - RBG - BRG - GBR - FEITOS
