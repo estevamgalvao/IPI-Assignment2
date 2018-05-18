@@ -4,6 +4,7 @@ import glob
 
 from rgb_ycbcr import RGB_YCbCr
 from tookRGBPix import tookRBGPix
+from notch_filter import notch
 
 adress = "/home/estevamgalvao/Documentos/UnB/5º Semestre/Introdução ao Processamento de Imagens/ImageProcessing/Assignments/Assignment 2/Images/*.bmp"
 
@@ -50,9 +51,9 @@ cv2.imwrite("Median Image RGB.bmp", medianImage) # Salvo a imagem colorida
 
 medianImageGrey = cv2.imread("Median Image RGB.bmp", 0)
 
-Fourier_img = np.fft.fft2(medianImageGrey)
-Fourier_img_shift = np.fft.fftshift(Fourier_img)
-magnitude_spectrum = 20 * np.log(np.abs(Fourier_img_shift))
+fourierImage = np.fft.fft2(medianImageGrey)
+fourierImageShift = np.fft.fftshift(fourierImage)
+magnitude_spectrum = 20 * np.log(np.abs(fourierImageShift))
 
 cv2.imwrite("Magnitude Spectrum.bmp", magnitude_spectrum)
 
