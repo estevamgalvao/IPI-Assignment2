@@ -1,4 +1,4 @@
-def tookRBGPix(img, i, j, option):
+def tookRBGPix(img, i, j, option = 3):
     blue = []
     green = []
     red = []
@@ -39,4 +39,13 @@ def tookRBGPix(img, i, j, option):
         red.append(img[i + 1, j - 1, 2])
         return red
     else:
-        print("não fode, né, Moai")
+        blue.append(img[i - 1, j + 1])
+        blue.append(img[i, j + 1])
+        blue.append(img[i + 1, j + 1])
+        blue.append(img[i - 1, j])
+        blue.append(img[i, j])
+        blue.append(img[i + 1, j])
+        blue.append(img[i - 1, j - 1])
+        blue.append(img[i, j - 1])
+        blue.append(img[i + 1, j - 1])
+        return blue

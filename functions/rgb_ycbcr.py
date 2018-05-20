@@ -17,7 +17,6 @@ def RGB_YCbCr(img, option):
         img[:, :, 2] = imageCb
 
     elif (option == 2):
-        #img = img.astype(np.int64)
 
         imageR = np.zeros((height, width), dtype=np.int8)
         imageG = np.zeros((height, width), dtype=np.int8)
@@ -31,10 +30,5 @@ def RGB_YCbCr(img, option):
         img[:, :, 1] = imageG
         img[:, :, 2] = imageR
 
-        print("Shape0: ", img[:, :, 0].shape)
-        print("Shape1: ", img[:, :, 1].shape)
-        print("Shape2: ", img[:, :, 2].shape)
-
-        #img = img.astype(np.uint64)
     else:
         print("não fode, moai")
