@@ -4,9 +4,9 @@ def RGB_YCbCr(img, option):
     height, width, channels = img.shape
 
     if (option == 1):
-        imageY = np.zeros((width, height, 1), dtype=np.int8)
-        imageCb = np.zeros((width, height, 1), dtype=np.int8)
-        imageCr = np.zeros((width, height, 1), dtype=np.int8)
+        imageY = np.zeros((height, width), dtype=np.int8)
+        imageCb = np.zeros((height, width), dtype=np.int8)
+        imageCr = np.zeros((height, width), dtype=np.int8)
 
         imageY = (0.114 * img[:, :, 0] + 0.587 * img[:, :, 1] + 0.299 * img[:, :, 2])
         imageCr = (0.713 * img[:, :, 2] - 0.713 * imageY + 128)
@@ -19,9 +19,9 @@ def RGB_YCbCr(img, option):
     elif (option == 2):
         #img = img.astype(np.int64)
 
-        imageR = np.zeros((width, height, 1), dtype=np.int8)
-        imageG = np.zeros((width, height, 1), dtype=np.int8)
-        imageB = np.zeros((width, height, 1), dtype=np.int8)
+        imageR = np.zeros((height, width), dtype=np.int8)
+        imageG = np.zeros((height, width), dtype=np.int8)
+        imageB = np.zeros((height, width), dtype=np.int8)
 
         imageR = img[:, :, 0] + (1.402 * img[:, :, 1] - 1.402 * 128)
         imageG = img[:, :, 0] + (-0.714 * img[:, :, 1] - (-0.714 * 128)) + (-0.344 * img[:, :, 2] - (-0.344 * 128))
@@ -30,6 +30,11 @@ def RGB_YCbCr(img, option):
         img[:, :, 0] = imageB
         img[:, :, 1] = imageG
         img[:, :, 2] = imageR
+
+        print("Shape0: ", img[:, :, 0].shape)
+        print("Shape1: ", img[:, :, 1].shape)
+        print("Shape2: ", img[:, :, 2].shape)
+
         #img = img.astype(np.uint64)
     else:
         print("não fode, moai")
