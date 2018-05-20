@@ -1,68 +1,91 @@
-import cv2
 import numpy as np
+import cv2
+import glob
 import copy
+from functions.notch_filter import passNotchFilter
+from functions.rgb_ycbcr import RGB_YCbCr
+from functions.tookRGBPix import tookRBGPix
 
-from rgb2gray import rgb2grey
-from tookRGBPix import tookRBGPix
+def Denoise():
+    adress = "/home/estevamgalvao/Documentos/UnB/5º Semestre/Introdução ao Processamento de Imagens/ImageProcessing/Assignments/Assignment 2/Images/*.bmp"
+    # Leio as imagens da pasta e salvo em uma lista. Logo após recupero o número de imagens lidas #
+    imageArray = [cv2.imread(file) for file in glob.glob(adress)]
+    numImg = len(imageArray)
 
-medianListBlue = []
-medianListGreen = []
-medianListRed = []
+    # Recupero as medidas da primeira imagem
+    height, width, channels = imageArray[0].shape
 
-endereco = "/home/estevamgalvao/Documentos/UnB/5º Semestre/Introdução ao Processamento de Imagens/ImageProcessing/Assignments/Assignment 2/Images/1.bmp"
+    # Crio um molde de zeros para acumular os pixels das imagens. uint16 -> garanto que não haverá overflow #
+    averageImage = np.zeros((height, width), dtype = np.uint16)
 
-# print(endereco[134:-4])
-# numero = int(endereco[134:-4])
-# print(numero)
+    # Transformo cada imagem em YCbCr e acumulo os valores de seus pixels #
+    for img in imageArray:
+        RGB_YCbCr(img, 1)
+        averageImage += img[:, :, 0]
 
-#imgDenoised = np.full((724, 724, 3), 0)
+    # Divido pelo número de imagens para os valores voltarem a ficar entre 0 - 255 #
+    averageImage = averageImage / numImg
+    # [x] AverageFilter #
+    cv2.imwrite("Average Image[Y].bmp", averageImage)
+    auxImage = imageArray[0]
+    auxImage[:, :, 0] = averageImage
+    cv2.imwrite("./aux_images/AuxImage-1.bmp", auxImage)
+    auxImage2 = copy.copy(auxImage)
+    RGB_YCbCr(auxImage2, 2)
+    cv2.imwrite("./aux_images/AuxImage-1RGB.bmp", auxImage2)
 
-#for numImage in range(1,101):
-# endereco = enderecoAux + str(numImage) + ".bmp"
-# print(endereco)
+    # Crio um molde com bordas para evitar out of range com uma máscara 3x3 andando pela imagem #
+    borderedImage = np.full((height+2,width+2), 255, dtype = np.uint8)
+    # Colo o conteúdo da minha imagem no centro do molde #
+    borderedImage[1:-1, 1:-1] = auxImage[:, :, 2]
 
-img = cv2.imread(endereco)
-width, height, channels = img.shape
-imgEdge = np.full((height+4,width+4,3), 255)
+    # Passo o filtro pegando todos o pixels envolta do meu e selecionado o valor do meio "[4]" #
+    for i in range(1, width):
+        for j in range(1, height):
+            medianFilterList = tookRBGPix(borderedImage, i, j)
+            medianFilterList.sort()
+            borderedImage[i, j] = medianFilterList[4]
 
-conteudo = img[0:height, 0:width]
+    # Retiro as bordas #
+    medianImage = borderedImage[1:-1, 1:-1]
+    # [x] MedianFilter #
+    cv2.imwrite("Median Image[CR].bmp", medianImage)
+    auxImage[:, :, 2] = medianImage
+    cv2.imwrite("./aux_images/AuxImage-2.bmp", auxImage)
+    auxImage2 = copy.copy(auxImage)
+    RGB_YCbCr(auxImage2, 2)
+    cv2.imwrite("./aux_images/AuxImage-2RGB.bmp", auxImage2)
 
-height, width, channels = imgEdge.shape
-imgEdge[2:height-2, 2:width-2] = conteudo
-imgAux = copy.copy(imgEdge)
+    # Utilizo a transformada de Fourier na componente Cb da Imagem Atual #
+    fourierImage = np.fft.fft2(auxImage[:, :, 1])
+    fourierImageShift = np.fft.fftshift(fourierImage)
+    # Espectro de Magnitude da componente Cb #
+    magnitude_spectrum = 20 * np.log(np.abs(fourierImageShift))
+    cv2.imwrite("Magnitude Spectrum.bmp", magnitude_spectrum)
+    # Realizo a filtragem Notch #
+    hFinal = passNotchFilter(fourierImageShift, 3)
+    tempImage = fourierImageShift * hFinal
+    # Transformo a imagem de volta para o domínio do espaço #
+    unshiftedTempImage = np.fft.ifftshift(tempImage)
+    backImage = np.fft.ifft2(unshiftedTempImage)
+    backImage = np.int8(np.abs(backImage))
 
-#consideramos um ruído, uma variável randomica que possui média zero.
-#p = p0 + n => p0 é o pixel original e n é o ruído, logo se fizemos a média de N imagens desse pixel
-#vamos obter p = p0 + n => p = p0
-#usarei um filtro de mediana
-#720/3 = 240 não irei usar padding
+    # [x] FourierFilter #
+    cv2.imwrite("Back Image[CB].bmp", backImage)
 
-for i in range(2,width-2):
-    for j in range(2,height-2):
-        medianListBlue = tookRBGPix(imgAux, i, j, 0)
-        medianListGreen = tookRBGPix(imgAux, i, j, 1)
-        medianListRed = tookRBGPix(imgAux, i, j, 2)
-        medianListBlue.sort()
-        medianListGreen.sort()
-        medianListRed.sort()
-        imgAux[i, j, 0] = medianListBlue[4]
-        imgAux[i, j, 1] = medianListGreen[4]
-        imgAux[i, j, 2] = medianListRed[4]
-cv2.imwrite("imgAux.bmp", imgAux[2:height-2, 2:width-2])
-
-# for i in range(2,width-2):
-#     for j in range(2,height-2):
-#         imgDenoised[i, j, 0] += imgAux[i, j, 0] / 100
-#         imgDenoised[i, j, 1] += imgAux[i, j, 1] / 100
-#         imgDenoised[i, j, 2] += imgAux[i, j, 2] / 100
-#componentes Y Cr Cb corrompidos pelo Gauss Noise. aplicar uma convolução para resolver isso antes de tudo.
-# cv2.imshow(endereco, img)
-# cv2.waitKey(0)
+    # Segunda passada do filtro da Mediana #
+    borderedImage[1:-1, 1:-1] = backImage
+    for i in range(1, height):
+        for j in range(1, width):
+            medianFilterList = tookRBGPix(borderedImage, i, j)
+            medianFilterList.sort()
+            borderedImage[i, j] = medianFilterList[4]
+    auxImage[:, :, 1] = borderedImage[1:-1, 1:-1]
 
 
-    # algum erro quando eu não uso a img no argumento de cvtColor
-    # imgAux2 = cv2.imread("/home/estevamgalvao/Documentos/UnB/5º Semestre/Introdução ao Processamento de Imagens/ImageProcessing/Assignments/Assignment 2/imgAux.bmp")
-    # imgYCC = cv2.cvtCol1or(imgAux2, cv2.COLOR_BGR2YCR_CB)
-    # cv2.imwrite("imgYCC.bmp", imgYCC)
+    # Converto para RGB novamente #
+    RGB_YCbCr(auxImage, 2)
+    cv2.imwrite("./aux_images/FinalImage.bmp", auxImage)
+    print("Image was denoised")
 
-#primeiro separar em Y Cb Cr
+Denoise()
