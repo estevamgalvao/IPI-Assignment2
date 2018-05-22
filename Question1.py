@@ -87,5 +87,3 @@ def Denoise():
     RGB_YCbCr(auxImage, 2)
     cv2.imwrite("./aux_images/FinalImage.bmp", auxImage)
     print("Image was denoised")
-
-Denoise()
