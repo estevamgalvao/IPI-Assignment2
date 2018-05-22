@@ -1,5 +1,5 @@
 import numpy as np
-from averageValue import averageValue
+from functions.averageValue import averageValue
 
 
 def nCC(imageA, imageB):
